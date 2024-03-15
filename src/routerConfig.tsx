@@ -1,17 +1,16 @@
-import { createBrowserRouter } from "react-router-dom"
-import Home from "./pages/Home/Home"
-import About from "./pages/About/About"
-import Events from "./pages/Events/Events"
-import Team from "./pages/Team/Team"
-import Sponsors from "./pages/Sponsors/Sponsors"
-import Members from "./pages/Members/Members"
-import ContactUs from "./pages/ContactUs/ContactUs"
-import Layout from "./Layout"
-
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Events from "./pages/Events/Events";
+import Team from "./pages/Team/Team";
+import Sponsors from "./pages/Sponsors/Sponsors";
+import Members from "./pages/Members/Members";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import Layout from "./Layout";
 
 const routerConfig = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -31,7 +30,7 @@ const routerConfig = createBrowserRouter([
         element: <Team />,
       },
       {
-        path: "/sponsers",
+        path: "/sponsor",
         element: <Sponsors />,
       },
       {
@@ -42,10 +41,8 @@ const routerConfig = createBrowserRouter([
         path: "/contact",
         element: <ContactUs />,
       },
-    ]
-  }
+    ],
+  },
 ]);
 
 export default routerConfig;
-
-

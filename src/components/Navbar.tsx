@@ -53,7 +53,7 @@ const Navbar = () => {
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/sponsor">Sponsor</Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
@@ -85,8 +85,8 @@ const Navbar = () => {
             </Link>
           </Button>
           <Button variant="ghost">
-            <Link to="/contact" className="text-lg uppercase">
-              Contact Us
+            <Link to="/sponsor" className="text-lg uppercase">
+              Sponsor
             </Link>
           </Button>
           <Button variant="ghost">
