@@ -12,7 +12,7 @@ import Layout from "./Layout"
 
 const routerConfig = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -32,7 +32,7 @@ const routerConfig = createBrowserRouter([
         element: <Team />,
       },
       {
-        path: "/sponsers",
+        path: "/sponsor",
         element: <Sponsors />,
       },
       {
@@ -52,5 +52,3 @@ const routerConfig = createBrowserRouter([
 ]);
 
 export default routerConfig;
-
-
