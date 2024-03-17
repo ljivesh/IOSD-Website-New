@@ -85,6 +85,11 @@ const Navbar = () => {
             </Link>
           </Button>
           <Button variant="ghost">
+            <Link to="/gallery" className="text-lg uppercase">
+              Gallery
+            </Link>
+          </Button>
+          <Button variant="ghost">
             <Link to="/sponsor" className="text-lg uppercase">
               Sponsor
             </Link>

@@ -6,6 +6,7 @@ import Team from "./pages/Team/Team";
 import Sponsors from "./pages/Sponsors/Sponsors";
 import Members from "./pages/Members/Members";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Gallery from "./pages/Gallery/Gallery";
 import Layout from "./Layout";
 
 const routerConfig = createBrowserRouter([
@@ -32,6 +33,10 @@ const routerConfig = createBrowserRouter([
       {
         path: "/sponsor",
         element: <Sponsors />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
       {
         path: "/members",

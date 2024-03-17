@@ -9,17 +9,14 @@ import sponsor7 from "@/assets/sponsors/mysphere3.webp";
 import sponsor8 from "@/assets/sponsors/axure.svg";
 import sponsor9 from "@/assets/sponsors/stockedge.png";
 
-interface SponsorsProps {
-  title: string;
-  image: string;
-}
 
-const Sponsors: React.FC<SponsorsProps> = ({ title }) => {
+
+const Sponsors = () => {
   return (
     <div className="m-10">
       <p className="text-4xl font-bold text-center">Our Sponsors</p>
       <div className="p-10">
-        <p className="text-4xl font-bold text-center">{title}</p>
+        {/* <p className="text-4xl font-bold text-center">{title}</p> */}
         <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4 items-center py-12">
           <SingleSponsor title="5ire" image={sponsor1} />
           <SingleSponsor title="Unstop" image={sponsor2} />
