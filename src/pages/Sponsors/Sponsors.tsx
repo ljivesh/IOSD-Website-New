@@ -14,7 +14,7 @@ interface SponsorsProps {
   image: string;
 }
 
-const Sponsors: React.FC<SponsorsProps> = ({ title, image }) => {
+const Sponsors: React.FC<SponsorsProps> = ({ title }) => {
   return (
     <div className="m-10">
       <p className="text-4xl font-bold text-center">Our Sponsors</p>
