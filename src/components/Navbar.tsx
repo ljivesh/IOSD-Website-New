@@ -53,6 +53,10 @@ const Navbar = () => {
             </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
+              <Link to="/gallery">Gallery</Link>
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
               <Link to="/sponsor">Sponsor</Link>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
