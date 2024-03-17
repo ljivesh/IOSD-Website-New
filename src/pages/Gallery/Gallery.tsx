@@ -21,6 +21,28 @@ import "./Gallery.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
+import codeIT1 from '@/assets/EventsImages/CodeIT1.jpeg';
+import codeIT2 from '@/assets/EventsImages/CodeIT2.jpeg';
+import codeIT3 from '@/assets/EventsImages/CodeIT3.jpeg';
+import codeIT4 from '@/assets/EventsImages/CodeIT4.jpeg';
+import codeIT5 from '@/assets/EventsImages/CodeIT5.jpeg';
+import codeIT6 from '@/assets/EventsImages/CodeIT6.jpeg';
+import codeIT7 from '@/assets/EventsImages/CodeIT7.jpeg';
+import codeIT8 from '@/assets/EventsImages/CodeIT8.jpeg';
+import codeIT9 from '@/assets/EventsImages/CodeIT9.jpeg';
+import codeIT10 from '@/assets/EventsImages/CodeIT10.jpeg';
+import codeIT11 from '@/assets/EventsImages/CodeIT11.jpeg';
+import codeIT12 from '@/assets/EventsImages/CodeIT12.jpeg';
+import codeIT13 from '@/assets/EventsImages/CodeIT13.jpeg';
+import codeIT14 from '@/assets/EventsImages/CodeIT14.jpeg';
+import codeIT15 from '@/assets/EventsImages/CodeIT15.jpeg';
+import codeIT16 from '@/assets/EventsImages/CodeIT16.jpeg';
+import kickstart221 from '@/assets/EventsImages/Kickstart221.jpeg';
+import kickstart222 from '@/assets/EventsImages/Kickstart222.jpeg';
+import kickstart223 from '@/assets/EventsImages/Kickstart223.jpeg';
+import kickstart224 from '@/assets/EventsImages/Kickstart224.jpeg';
+
+
 interface SortablePhoto extends Photo {
     id: string;
 }
@@ -37,26 +59,26 @@ type PhotoFrameProps = SortablePhotoProps & {
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const unsplashPhotos = [
-    { src: "public/EventsImages/codeIT1.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT2.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT3.jpeg", width: 1080, height: 1620 },
-    { src: "public/EventsImages/codeIT5.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT6.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT4.jpeg", width: 1080, height: 384 },
-    { src: "public/EventsImages/codeIT7.jpeg", width: 1080, height: 1680 },
-    { src: "public/EventsImages/codeIT8.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT9.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT10.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT11.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT12.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT13.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT14.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT15.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/codeIT16.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/kickstart221.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/kickstart222.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/kickstart223.jpeg", width: 1080, height: 1080 },
-    { src: "public/EventsImages/kickstart224.jpeg", width: 1080, height: 1080 },
+    { src: codeIT1, width: 1080, height: 1080 },
+    { src: codeIT2, width: 1080, height: 1080 },
+    { src: codeIT3, width: 1080, height: 1620 },
+    { src: codeIT4, width: 1080, height: 384 },
+    { src: codeIT5, width: 1080, height: 1080 },
+    { src: codeIT6, width: 1080, height: 1080 },
+    { src: codeIT7, width: 1080, height: 1680 },
+    { src: codeIT8, width: 1080, height: 1080 },
+    { src: codeIT9, width: 1080, height: 1080 },
+    { src: codeIT10, width: 1080, height: 1080 },
+    { src: codeIT11, width: 1080, height: 1080 },
+    { src: codeIT12, width: 1080, height: 1080 },
+    { src: codeIT13, width: 1080, height: 1080 },
+    { src: codeIT14, width: 1080, height: 1080 },
+    { src: codeIT15, width: 1080, height: 1080 },
+    { src: codeIT16, width: 1080, height: 1080 },
+    { src: kickstart221, width: 1080, height: 1080 },
+    { src: kickstart222, width: 1080, height: 1080 },
+    { src: kickstart223, width: 1080, height: 1080 },
+    { src: kickstart224, width: 1080, height: 1080 },
 ];
 const photoSet =  unsplashPhotos.map((photo) => ({
     src: photo.src,
