@@ -52,7 +52,7 @@ const UpcomingEvents = () => {
         ))}
         <Card
           className="w-72 h-[32rem] flex flex-col justify-center items-center bg-indigo-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100 border-none
-            transform hover:scale-105 transition-transform duration-300 ease-in-out
+            transform hover:scale-105 transition-transform ease-in-out
           "
         >
           <Link

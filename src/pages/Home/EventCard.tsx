@@ -17,7 +17,7 @@ const EventCard = ({title, date, description, imageUrl}: EventCardProps) => {
   return (
     <Card
       className="w-72 h-[32rem] border-none bg-indigo-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100
-      transform hover:scale-105 transition-transform duration-300 ease-in-out flex flex-col justify-between
+      transform hover:scale-105 transition-transform ease-in-out flex flex-col justify-between
       "
     >
       <div className="h-1/2 flex justify-center">
