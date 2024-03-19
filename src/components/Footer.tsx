@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="font-bold text-lg">Contact Us</p>
           <div className="flex gap-2">
             <Phone />
-            <p className="text-white">+91 1234567890</p>
+            <p className="text-white">+91-9654302198</p>
           </div>
           <div className="flex gap-2">
             <Mail />
