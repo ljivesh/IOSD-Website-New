@@ -33,15 +33,16 @@ import AayushRoy from "../../assets/Team/Core/AayushRoy.png";
 
 // import Garima from "../../assets/Team/Garima.jpg";
 import Hero from "../../assets/Team/Hero.png";
+import TeamHero from "./components/TeamHero";
 
 
 const Team = () => {
   return (
     <div className="flex flex-col gap-16">
-      <section id="council" className="w-full"
+      {/* <section id="council" className="w-full"
       style={{ background: "linear-gradient(94.08deg, #EEEEEE 32.34%, #4CC8D2 79.95%)" }}
       >
-        {/* <div className="w-2/3 flex flex-col">
+        <div className="w-2/3 flex flex-col">
           <h1 className="w-1/2 text-7xl text-black font-semibold uppercase my-4">People are Everything!</h1>
           <p className="w-5/6 text-black text-xl">
             Allow us to introduce our dedicated and passionate team at the
@@ -53,10 +54,11 @@ const Team = () => {
             to the table.
           </p>
         </div>
-        <div className=""> */}
+        <div className="">
           <img src={Hero} alt="Garima Maam" />
-        {/* </div> */}
-      </section>
+        </div>
+      </section> */}
+      <TeamHero />
         <p className="text-white items-center text-5xl font-semibold w-full text-center ">Meet our Team</p>
       <section id="council" className="flex flex-col gap-8">
         <p className="text-white items-center text-5xl w-full text-center font-rochester">The Council</p>

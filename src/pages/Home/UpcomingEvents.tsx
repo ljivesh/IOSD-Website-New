@@ -28,7 +28,7 @@ const events = [
   {
     id: 3,
     title: "Impulse",
-    date: "TBA",
+    date: "15/04/24",
     description:
       "Join us for 'Impulse,' our flagship event that brings together tech enthusiasts, industry experts, and students. It's a platform for learning, networking, and innovation. 🌐🎉",
     imageUrl: Impulse,
