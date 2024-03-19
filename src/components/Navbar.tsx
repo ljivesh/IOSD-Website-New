@@ -7,8 +7,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { AlignJustify } from "lucide-react";
@@ -20,7 +18,7 @@ const Navbar = () => {
   const isLargeDevice = useMediaQuery("only screen and (min-width : 993px)");
 
   return (
-    <div className="flex justify-between items-center py-3 px-10 bg-gradient-to-r from-[#09090F] to-[#0A1227]">
+    <div className="flex justify-between items-center py-3 px-10 bg-gradient-to-r from-[#09090F] to-[#0A1227] sticky top-0 z-50">
       <div>
         <Link to="/">
           <img src={IosdLogo} alt="iosd-logo" className="w-36" />
@@ -33,76 +31,82 @@ const Navbar = () => {
               <AlignJustify />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent onClick={() => setDropDownIsOpen(false)}>
-            <DropdownMenuLabel>Navigate</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/about">About</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/members">Members</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/team">Team</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/events">Events</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/gallery">Gallery</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/sponsor">Sponsor</Link>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/join">Join Us</Link>
-            </DropdownMenuItem>
+          <DropdownMenuContent
+            className=" font-bold
+            border-none text-slate-300
+            bg-indigo-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-30 border border-gray-100
+"
+            onClick={() => setDropDownIsOpen(false)}
+          >
+            {/* <DropdownMenuLabel>Navigate</DropdownMenuLabel> */}
+
+            <Link to="/about">
+              <DropdownMenuItem className="text-lg">About</DropdownMenuItem>
+            </Link>
+
+            <Link to="/members">
+              <DropdownMenuItem  className="text-lg">Members</DropdownMenuItem>
+            </Link>
+
+            <Link to="/team">
+              <DropdownMenuItem  className="text-lg">Team</DropdownMenuItem>
+            </Link>
+
+            <Link to="/events">
+              <DropdownMenuItem  className="text-lg">Events</DropdownMenuItem>
+            </Link>
+
+            <Link to="/gallery">
+              <DropdownMenuItem  className="text-lg">Gallery</DropdownMenuItem>
+            </Link>
+
+            <Link to="/sponsor">
+              <DropdownMenuItem  className="text-lg">Sponsor</DropdownMenuItem>
+            </Link>
+
+            <Link to="/join">
+              <DropdownMenuItem  className="text-lg">Join Us</DropdownMenuItem>
+            </Link>
           </DropdownMenuContent>
         </DropdownMenu>
       )}
       {isLargeDevice && (
         <ul className="flex gap-2 text-lg uppercase">
-          <Button variant="ghost">
-            <Link to="/about" className="text-lg uppercase">
+          <Link to="/about">
+            <Button variant="ghost" className="text-lg uppercase">
               About
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/members" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/members">
+            <Button variant="ghost" className="text-lg uppercase">
               Members
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/team" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/team">
+            <Button variant="ghost" className="text-lg uppercase">
               Team
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/events" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/events">
+            <Button variant="ghost" className="text-lg uppercase">
               Events
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/gallery" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/gallery">
+            <Button variant="ghost" className="text-lg uppercase">
               Gallery
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/sponsor" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/sponsor">
+            <Button variant="ghost" className="text-lg uppercase">
               Sponsor
-            </Link>
-          </Button>
-          <Button variant="ghost">
-            <Link to="/join" className="text-lg uppercase">
+            </Button>
+          </Link>
+          <Link to="/join">
+            <Button variant="ghost" className="text-lg uppercase">
               Join Us
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </ul>
       )}
     </div>

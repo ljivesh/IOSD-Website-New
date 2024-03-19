@@ -74,6 +74,7 @@ module.exports = {
     },
     fontFamily: {
       rubik: ['"Rubik Glitch"', "sans-serif"],
+      rochester: ['"Rochester"', "cursive"],
     },
   },
   plugins: [require("tailwindcss-animate")],

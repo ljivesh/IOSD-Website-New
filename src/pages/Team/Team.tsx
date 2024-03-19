@@ -37,7 +37,7 @@ import Hero from "../../assets/Team/Hero.png";
 
 const Team = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-16">
       <section id="council" className="w-full"
       style={{ background: "linear-gradient(94.08deg, #EEEEEE 32.34%, #4CC8D2 79.95%)" }}
       >
@@ -57,17 +57,17 @@ const Team = () => {
           <img src={Hero} alt="Garima Maam" />
         {/* </div> */}
       </section>
-      <section id="council" className="">
-        <h1 className="text-white items-center my-16 text-5xl font-semibold w-full text-center ">MEET OUR TEAM</h1>
-        <h1 className="text-white items-center my-14 text-7xl font-semibold w-full text-center font-serif">The Council</h1>
+        <p className="text-white items-center text-5xl font-semibold w-full text-center ">Meet our Team</p>
+      <section id="council" className="flex flex-col gap-8">
+        <p className="text-white items-center text-5xl w-full text-center font-rochester">The Council</p>
         <div className="flex flex-wrap gap-10 px-30 justify-center align-middle w-full">
           {council.map((member) => (
             <TeamMember key={member.id} member={member} />
           ))}
         </div>
       </section>
-      <section id="core" className="">
-        <h1 className="text-white items-center my-20 text-7xl font-semibold w-full text-center font-serif">The Core</h1>
+      <section id="core" className="flex flex-col gap-8">
+        <h1 className="text-white items-center text-5xl w-full text-center font-rochester">The Core</h1>
         <div className="flex flex-wrap gap-10 px-30 justify-center align-middle w-full mb-10">
           {core.map((member) => (
             <TeamMember key={member.id} member={member} />
