@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import IosdLogo from "../assets/iosd-logo.png";
@@ -17,8 +17,22 @@ const Navbar = () => {
   const isSmallDevice = useMediaQuery("only screen and (max-width : 992px)");
   const isLargeDevice = useMediaQuery("only screen and (min-width : 993px)");
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <div className="flex justify-between items-center py-3 px-10 bg-gradient-to-r from-[#09090F] to-[#0A1227] sticky top-0 z-50">
+    <div className={`flex justify-between items-center py-3 px-10 bg-gradient-to-r from-[#09090F] to-[#0A1227] fixed w-full z-50 top-0 transition-transform duration-300  ${visible ? '' : '-translate-y-full'}`}>
       <div>
         <Link to="/">
           <img src={IosdLogo} alt="iosd-logo" className="w-36" />

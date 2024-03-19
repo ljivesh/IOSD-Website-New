@@ -13,7 +13,7 @@ import sponsor9 from "@/assets/sponsors/stockedge.png";
 
 const Sponsors = () => {
   return (
-    <div className="flex flex-col mt-10">
+    <div className="flex flex-col mt-20">
       <p className="text-4xl font-bold text-center">Our Sponsors</p>
       <div className="p-10">
         {/* <p className="text-4xl font-bold text-center">{title}</p> */}
