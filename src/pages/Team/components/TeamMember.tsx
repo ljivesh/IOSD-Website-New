@@ -16,7 +16,7 @@ const TeamMember = ({ member }: any) => {
             <img src={member.img} className="h-52" />
           </div>
         </div>
-        <div className="font-rochester font-bold text-3xl group-hover:-translate-y-5 transition ease-linear">
+        <div className="font-rochester font-bold text-3xl group-hover:-translate-y-5 transition ease-linear z-20">
           <span>{member.role}</span>
         </div>
 
