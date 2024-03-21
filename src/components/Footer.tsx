@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-screen flex flex-col justify-center items-center bg-gradient-to-r gap-3 from-[#09090F] to-[#0A1227] h-2/5 md:h-1/3">
+    <footer className=" flex flex-col justify-center items-center bg-gradient-to-r gap-3 from-[#09090F] to-[#0A1227] h-2/5 md:h-1/3">
       <div className="w-full md:flex md:justify-evenly">
         <div className="p-6 flex flex-col items-center gap-2">
           <p className="font-bold text-lg">Contact Us</p>
