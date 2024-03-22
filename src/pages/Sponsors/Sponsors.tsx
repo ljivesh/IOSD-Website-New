@@ -13,11 +13,11 @@ import sponsor9 from "@/assets/sponsors/stockedge.png";
 
 const Sponsors = () => {
   return (
-    <div className="flex flex-col mt-20">
+    <div className="flex flex-col mt-28">
       <p className="text-4xl font-bold text-center">Our Sponsors</p>
       <div className="p-10">
         {/* <p className="text-4xl font-bold text-center">{title}</p> */}
-        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-4 items-center">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-14 items-center">
           <SingleSponsor title="5ire" image={sponsor1} />
           <SingleSponsor title="Unstop" image={sponsor2} />
           <SingleSponsor title="Evepaper" image={sponsor3} />

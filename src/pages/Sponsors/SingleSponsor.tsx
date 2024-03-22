@@ -7,11 +7,12 @@ interface SingleSponsorProps {
 
 const SingleSponsor: React.FC<SingleSponsorProps> = (props) => {
   return (
-    <Card className="w-64 h-44 m-7">
+    <Card className="w-64 h-44 flex flex-col items-center p-4 bg-slate-200 gap-3">
       <img
         src={props.image}
         alt="image"
-        style={{ width: "100%", height: "80%" }}
+        className="h-3/4"
+        // style={{ width: "100%", height: "80%" }}
       />
       <CardTitle className="p-2 flex flex-col gap-4 text-center mb-2">
         {props.title}

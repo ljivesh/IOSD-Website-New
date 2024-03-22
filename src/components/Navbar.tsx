@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useMediaQuery } from "@uidotdev/usehooks";
 import IosdLogo from "../assets/iosd-logo.png";
 import { Button } from "./ui/button";
@@ -16,6 +16,16 @@ const Navbar = () => {
 
   const isSmallDevice = useMediaQuery("only screen and (max-width : 992px)");
   const isLargeDevice = useMediaQuery("only screen and (min-width : 993px)");
+
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    console.log(pathname);
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
 
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
